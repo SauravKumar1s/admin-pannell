@@ -59,7 +59,7 @@ const Dashboard = () => {
         <Graph />
         <div className=" flex items-center justify-center bg-gray-100 border border-gray-300 shadow-sm rounded-2xl">
           <DonutChart
-          className="flex justify-center items-center"
+            className="flex justify-center items-center"
             width={400}
             height={300}
             onMouseEnter={(item) => reactDonutChartOnMouseEnter(item)}
