@@ -57,9 +57,11 @@ const Dashboard = () => {
         {/* sales */}
 
         <Graph />
-        <div className="mt-10 flex items-center justify-center ">
+        <div className=" flex items-center justify-center bg-gray-100 border border-gray-300 shadow-sm rounded-2xl">
           <DonutChart
+          className="flex justify-center items-center"
             width={400}
+            height={300}
             onMouseEnter={(item) => reactDonutChartOnMouseEnter(item)}
             strokeColor={reactDonutChartStrokeColor}
             data={reactDonutChartdata}

@@ -3,8 +3,8 @@ import React from 'react'
 const Card = () => {
   return (
     <div>
-        <div className="shadow-soft-xl relative mb-6 flex min-w-0 flex-col break-words rounded-2xl bg-gray-100 bg-clip-border">
-          <div className="flex-auto p-4">
+        <div className="shadow-soft-xl relative mb-6 flex min-w-0 flex-col break-words rounded-2xl bg-gray-100 border border-gray-300 shadow-sm">
+          <div className="flex-auto p-4 ">
             <div className="-mx-3 flex flex-wrap">
               <div className="w-2/3 max-w-full flex-none px-3">
                 <div>
@@ -23,7 +23,7 @@ const Card = () => {
                 <div className="shadow-soft-2xl inline-block h-12 w-12 rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500 text-center">
                   <i
                     className="ni ni-money-coins relative top-3.5 text-lg text-white"
-                    aria-hidden="true"
+                 
                   ></i>
                 </div>
               </div>

@@ -3,11 +3,12 @@
 import { HiX } from "react-icons/hi";
 import Links from "./components/Links";
 import routes from "../../routes";
+import audi from "../../assets/img/audi-logo-2.png"
 
 const Sidebar = ({ open, onClose }) => {
   return (
     <div
-      className={`sm:none duration-175 linear fixed !z-50 flex min-h-full flex-col bg-white pb-10 shadow-2xl shadow-white/5 transition-all dark:!bg-navy-800 dark:text-white md:!z-50 lg:!z-50 xl:!z-0 ${
+      className={`sm:none duration-175 linear fixed !z-50 flex min-h-full flex-col bg-gray-100 pb-10 shadow-2xl shadow-white/5 transition-all ${
         open ? "translate-x-0" : "-translate-x-96"
       }`}
     >
@@ -18,12 +19,10 @@ const Sidebar = ({ open, onClose }) => {
         <HiX />
       </span>
 
-      <div className={`mx-[56px] mt-[50px] flex items-center`}>
-        <div className="mt-1 ml-1 h-2.5 font-poppins text-[26px] font-bold uppercase text-navy-700 dark:text-white">
-          Audi <span class="font-medium">Car</span>
-        </div>
+      <div className={`mx-[56px] mt-[10px] flex items-center`}>
+        <img className="h-20 w-24" src={audi} alt="logo"/>
       </div>
-      <div class="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
+      <div className="mt-[px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
 
       <ul className="mb-auto pt-1">
         <Links routes={routes} />
