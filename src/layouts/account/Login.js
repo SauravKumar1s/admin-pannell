@@ -10,7 +10,7 @@ const Login = () => {
             <div className="w-full">
               <div className="dark:bg-neutral-800 block rounded-lg ">
                 <div className="lg:flex lg:flex-wrap">
-                  <div className="sm:flex items-center rounded-lg bg-gray-500 lg:w-6/12  hidden">
+                  <div className="lg:flex items-center rounded-lg bg-gray-500 lg:w-6/12  hidden">
                     <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                       <h4 className="mb-6 text-xl font-semibold">
                         We are more than just a company
