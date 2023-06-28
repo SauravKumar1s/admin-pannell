@@ -7,8 +7,12 @@ import Dashboard from "./views/admin/dashboard";
 
 import {
   MdHome,
+  MdOutlineProductionQuantityLimits
 
 } from "react-icons/md";
+import { BiBarChartAlt } from "react-icons/bi";
+import { TbReportMoney } from "react-icons/tb";
+
 
 const routes = [
   {
@@ -23,7 +27,7 @@ const routes = [
     name: "Products",
     layout: "/admin",
     path: "products",
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <MdOutlineProductionQuantityLimits className="h-6 w-6" />,
     // component: <MainDashboard />,
     secondary: true,
   },
@@ -32,7 +36,7 @@ const routes = [
     name: "Test drives Booking",
     layout: "/admin",
     path: "test-drives",
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <BiBarChartAlt className="h-6 w-6" />,
     // component: <MainDashboard />,
     secondary: true,
   },
@@ -40,7 +44,7 @@ const routes = [
     name: "Payments",
     layout: "/admin",
     path: "payments",
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <TbReportMoney className="h-6 w-6" />,
     // component: <MainDashboard />,
     secondary: true,
   },
