@@ -6,11 +6,11 @@ const Login = () => {
     <div>
       <section className="flex justify-center">
         <div className="container h-full p-10">
-          <div className=" items-center justify-center bg-white">
+          <div className="items-center justify-center bg-white">
             <div className="w-full">
               <div className="dark:bg-neutral-800 block rounded-lg ">
                 <div className="lg:flex lg:flex-wrap">
-                  <div className="flex items-center rounded-b-lg bg-gray-400 lg:w-6/12">
+                  <div className="sm:flex items-center rounded-lg bg-gray-500 lg:w-6/12  hidden">
                     <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                       <h4 className="mb-6 text-xl font-semibold">
                         We are more than just a company
@@ -37,29 +37,30 @@ const Login = () => {
                         <p className="mb-4">Please login to your account</p>
 
                         <div className="mb-10">
-                         <InputField placeholder="UserName"/>
+                          <InputField placeholder="Username" />
                         </div>
                         <div className="mb-10">
-                        <InputField placeholder="Password"/>
-                         
+                          <InputField placeholder="Password" type="password" />
                         </div>
 
                         <div className="mb-12 pb-1 pt-1 text-center">
                           <button
-                            className="focus:border-danger-600  inline-block w-full rounded  border-2 bg-gray-900 py-4 text-xs text-white"
+                            className="focus:border-danger-600 inline-block w-full rounded-xl bg-gray-900 py-4 text-xl text-white hover:bg-gray-800 mb-4"
                             type="button"
                           >
                             Log in
                           </button>
 
-                          <a href="#!">Forgot password?</a>
+                          <a href="#!" className="text-gray-600 hover:underline ">
+                            Forgot password?
+                          </a>
                         </div>
 
                         <div className="flex items-center justify-between pb-6">
                           <p className="mb-0 mr-2">Don't have an account?</p>
                           <button
                             type="button"
-                            className="focus:border-danger-600  inline-block rounded border-2 bg-gray-900 px-6 pb-[6px] pt-2 text-xs text-white"
+                            className="focus:border-danger-600 inline-block rounded-xl border-2 bg-gray-900 px-6 pb-[6px] pt-2 text-sm text-white text hover:bg-gray-800"
                           >
                             Register
                           </button>

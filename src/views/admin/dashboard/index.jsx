@@ -55,7 +55,7 @@ const Dashboard = () => {
 
       <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
         {/* sales */}
-
+        
         <Graph />
         <div className=" flex items-center justify-center bg-gray-100 border border-gray-300 shadow-sm rounded-2xl">
           <DonutChart
