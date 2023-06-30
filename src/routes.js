@@ -12,6 +12,9 @@ import {
 } from "react-icons/md";
 import { BiBarChartAlt } from "react-icons/bi";
 import { TbReportMoney } from "react-icons/tb";
+import Products from "./views/admin/products";
+import TestDrive from "./views/admin/testdrive";
+import Payment from "./views/admin/payment";
 
 
 const routes = [
@@ -28,7 +31,7 @@ const routes = [
     layout: "/admin",
     path: "products",
     icon: <MdOutlineProductionQuantityLimits className="h-6 w-6" />,
-    // component: <MainDashboard />,
+    component: <Products />,
     secondary: true,
   },
 
@@ -37,7 +40,7 @@ const routes = [
     layout: "/admin",
     path: "test-drives",
     icon: <BiBarChartAlt className="h-6 w-6" />,
-    // component: <MainDashboard />,
+    component: <TestDrive />,
     secondary: true,
   },
   {
@@ -45,7 +48,7 @@ const routes = [
     layout: "/admin",
     path: "payments",
     icon: <TbReportMoney className="h-6 w-6" />,
-    // component: <MainDashboard />,
+    component: <Payment />,
     secondary: true,
   },
 ];

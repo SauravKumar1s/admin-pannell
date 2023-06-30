@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Login from "./layouts/account/Login";
 import Admin from "./layouts/admin";
+import AdminFooter from "./components/footer/AdminFooter";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Navigate to="/admin" replace />} />
     </Routes>
+    
   );
 };
 

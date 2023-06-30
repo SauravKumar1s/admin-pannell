@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/index"
 import Sidebar from "../../components/sidebar/index";
 
 import routes from "../../routes";
+import AdminFooter from "../../components/footer/AdminFooter";
 
 export default function Admin(props) {
   const { ...rest } = props;
@@ -84,6 +85,7 @@ export default function Admin(props) {
                   element={<Navigate to="/admin/dashboard" replace />}
                 />
               </Routes>
+              <AdminFooter/>
             </div>
            
           </div>
