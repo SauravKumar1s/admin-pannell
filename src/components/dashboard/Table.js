@@ -4,6 +4,7 @@ export const Table = () => {
   const data = [
     {
       id: 1,
+      order: "#95954",
       status: "Active",
       name: "Jone Doe",
       email: "jonne62@gmail.com",
@@ -12,6 +13,7 @@ export const Table = () => {
     },
     {
       id: 2,
+      order: "#95954",
       status: "Cancelled",
       name: "Jone Doe",
       email: "jonne62@gmail.com",
@@ -20,6 +22,7 @@ export const Table = () => {
     },
     {
       id: 3,
+      order: "#95954",
       status: "Complete",
       name: "Jone Doe",
       email: "jonne62@gmail.com",
@@ -28,6 +31,7 @@ export const Table = () => {
     },
     {
       id: 4,
+      order: "#95954",
       status: "Active",
       name: "Mary Poppins",
       email: "marypoppins@gmail.com",
@@ -106,7 +110,7 @@ export const Table = () => {
                     {data.map((item) => (
                       <tr key={item.id}>
                         <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                          {item.id}
+                          {item.order}
                         </td>
                         <td
                           className={`px-6 py-4 text-sm text-gray-800 whitespace-nowrap ${getStatusTextColor(
@@ -148,8 +152,8 @@ export const Table2 = () => {
         <div className="flex justify-between  p-2">
           <h2 className="text-xl">Test Drive by models</h2>
           <button className="px-3 py-1 text-black rounded-lg text-sm font-normal border border-gray-500">
-                View More
-              </button>
+            View More
+          </button>
         </div>
         <div className="p-1.5 w-full inline-block align-middle">
           <div className="overflow-hidden border rounded-lg">
@@ -173,34 +177,34 @@ export const Table2 = () => {
               <tbody className="divide-y divide-gray-200">
                 <tr>
                   <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                    1
+                    Audi e-tron GT quattro
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                    Jone Doe
+                    10
                   </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                    2
+                    RS e-tron GT
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                    Jone Doe
+                    32
                   </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                    3
+                    Q8 e-tron
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                    Jone Doe
+                   78
                   </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                    4
+                    Q4 Sportback e-tron
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                    Mary Poppins
+                   45
                   </td>
                 </tr>
               </tbody>

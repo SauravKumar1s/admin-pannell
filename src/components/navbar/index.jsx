@@ -14,30 +14,29 @@ const Navbar = (props) => {
     <nav className="sticky top-0 z-40 flex flex-row  items-center justify-between  bg-white/10 p-2 backdrop-blur-xl dark:bg-[#0b14374d]  border-b-2 ">
       <div className="ml-[6px]">
         <div className="h-6 w-[224px] pt-1">
-          <a
+          <span
             className="text-sm font-normal text-navy-700 hover:underline dark:text-white dark:hover:text-white"
-            href=" "
           >
             Pages
             <span className="mx-1 text-sm text-navy-700 hover:text-navy-700 dark:text-white">
               {" "}
               /{" "}
             </span>
-          </a>
-          <Link
+          </span>
+          <span
             className="text-sm font-normal capitalize text-navy-700 hover:underline dark:text-white dark:hover:text-white"
-            to="#"
+       
           >
             {brandText}
-          </Link>
+          </span>
         </div>
         <p className="shrink sm:text-[33px] text-[18px] capitalize text-navy-700 dark:text-white">
-          <Link
-            to="#"
+          <span
+          
             className="font-bold capitalize hover:text-navy-700 dark:hover:text-white"
           >
             {brandText}
-          </Link>
+          </span>
         </p>
       </div>
 
@@ -75,18 +74,13 @@ const Navbar = (props) => {
                 >
                   Profile Settings
                 </a>
-                <a
-                  href=" "
-                  className="mt-3 text-sm text-gray-800 dark:text-white hover:dark:text-white"
-                >
-                  Newsletter Settings
-                </a>
-                <a
-                  href=" "
+           
+                <Link
+                  to="http://localhost:3000/login"
                   className="mt-3 text-sm font-medium text-red-500 hover:text-red-500"
                 >
                   Log Out
-                </a>
+                </Link>
               </div>
             </div>
           }

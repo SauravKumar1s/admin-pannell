@@ -11,7 +11,7 @@ const Login = () => {
       <div className="w-full">
         <div className="block rounded-lg">
           <div className="lg:flex lg:flex-wrap">
-            <div className="lg:flex items-center rounded-lg bg-gray-300 h-screen lg:w-6/12 hidden">
+            <div className="lg:flex items-center  bg-[#eee] h-screen lg:w-6/12 hidden">
               <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                 <h4 className="mb-6 text-2xl font-bold text-black">
                   Delivering 100'000s of NEW qualified leads to Electric Car Manufactures every month
@@ -24,10 +24,10 @@ const Login = () => {
               </div>
             </div>
 
-            <div className="px-4 md:px-0 lg:w-6/12 mt-32">
-              <div className="md:mx-6 md:p-12">
+            <div className="px-4 md:px-0 lg:w-6/12 ">
+              <div className="md:mx-6 md:p-12 ">
                 <div className="text-center mb-8">
-                  <h4 className=" mt-1 pb-1 sm:text-2xl text-xl font-semibold">
+                  <h4 className=" mt-24 pb-1 sm:text-2xl text-xl font-semibold">
                     Welcome Back!
                   </h4>
                   <p className="mb-4">Please login to your account</p>
@@ -42,6 +42,15 @@ const Login = () => {
                   <div className="mb-10">
                     <InputField placeholder="Password" type="password" />
                   </div>
+
+                  <div class="flex items-center space-x-2 mb-4">
+              <input
+                type="checkbox"
+                id="remember"
+                className="w-4 h-4 transition duration-300 rounded focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-blue-200"
+              />
+              <label for="remember" className="text-sm font-semibold text-gray-500">Remember me</label>
+            </div>
 
                   <div className="mb-12 pb-1 pt-1 text-center">
                     <button
