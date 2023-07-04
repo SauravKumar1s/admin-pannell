@@ -1,8 +1,9 @@
 import React from "react";
 import { InputField } from "../../components/fields/InputField";
 import logoCar from "../../assets/img/ev-logo-neww.png"
-
+import {useNavigate} from "react-router-dom"
 const Login = () => {
+  const navigate = useNavigate();
   return (
    
     <section className="flex justify-center">
@@ -55,7 +56,8 @@ const Login = () => {
                   <div className="mb-12 pb-1 pt-1 text-center">
                     <button
                       className="focus:border-danger-600 inline-block w-full rounded-xl bg-gray-900 py-4 text-xl text-white hover:bg-gray-800 mb-4"
-                      type="button"
+                     
+                      onClick={()=>navigate("/admin/dashboard")}
                     >
                       Log in
                     </button>

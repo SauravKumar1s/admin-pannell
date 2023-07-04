@@ -76,7 +76,7 @@ const Navbar = (props) => {
                 </a>
            
                 <Link
-                  to="http://localhost:3000/login"
+                  to="/login"
                   className="mt-3 text-sm font-medium text-red-500 hover:text-red-500"
                 >
                   Log Out

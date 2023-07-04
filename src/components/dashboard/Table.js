@@ -155,8 +155,8 @@ export const Table2 = () => {
             View More
           </button>
         </div>
-        <div className="p-1.5 w-full inline-block align-middle">
-          <div className="overflow-hidden border rounded-lg">
+        <div className="w-full inline-block align-middle">
+          <div className="overflow-hidden ">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
@@ -196,7 +196,7 @@ export const Table2 = () => {
                     Q8 e-tron
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                   78
+                    78
                   </td>
                 </tr>
                 <tr>
@@ -204,7 +204,7 @@ export const Table2 = () => {
                     Q4 Sportback e-tron
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                   45
+                    45
                   </td>
                 </tr>
               </tbody>
@@ -213,5 +213,189 @@ export const Table2 = () => {
         </div>
       </div>
     </>
+  );
+};
+
+export const TableTestDrive = () => {
+  const dataTestDrive = [
+    {
+      id: 1,
+      name: "Jone ",
+      lastName: "Poppins",
+      email: "jonne62@gmail.com",
+      address: "Delhi IND",
+      contact: "9595468434",
+      model: "Audi Car q7",
+      status: "Active",
+    },
+    {
+      id: 2,
+      name: "Jone ",
+      lastName: "Poppins",
+      email: "jonne62@gmail.com",
+      address: "Delhi IND",
+      contact: "9595468434",
+      model: "Audi Car q7",
+      status: "Cancelled",
+    },
+    {
+      id: 3,
+      name: "Jone ",
+      lastName: "Poppins",
+      email: "jonne62@gmail.com",
+      address: "Delhi IND",
+      contact: "9595468434",
+      model: "Audi Car q7",
+      status: "Complete",
+    },
+    {
+      id: 4,
+      name: "Mary ",
+      lastName: "Poppins",
+      email: "marypoppins@gmail.com",
+      address: "Delhi IND",
+      contact: "9595468434",
+      model: "Audi Car q7",
+      status: "Active",
+      date: "2023-06-30",
+      time: "3:45 PM",
+    },
+  ];
+
+  const tableContainerStyles = {
+    maxHeight: "400px", // Set an appropriate height for the container
+    overflow: "auto",
+  };
+
+  const getStatusTextColor = (status) => {
+    switch (status) {
+      case "Active":
+        return "text-green-500";
+      case "Cancelled":
+        return "text-red-500";
+      case "Complete":
+        return "text-orange-500";
+      default:
+        return "";
+    }
+  };
+
+  return (
+    <div className="flex flex-col">
+      <div className="overflow-x-auto">
+        <div className="p-1.5 w-full inline-block align-middle">
+          <div className="overflow-hidden border rounded-lg">
+            <div className="min-w-full">
+              <div style={tableContainerStyles} className="table-container">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gray-50">
+                    <tr>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase"
+                      >
+                        First Name
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase"
+                      >
+                        Last Name
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase"
+                      >
+                        Email Address
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase"
+                      >
+                        Address
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase"
+                      >
+                        Contact No
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase"
+                      >
+                        Model
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase"
+                      >
+                        Status
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-sm font-bold text-right text-gray-500 uppercase"
+                      >
+                        {" "}
+                        <select>
+                          <option>Action</option>
+                          <option value="complete">Complete</option>
+                          <option value="incomplete">Cancelled</option>
+                        </select>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {dataTestDrive.map((item) => (
+                      <tr key={item.id}>
+                        <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                          {item.name}
+                        </td>
+                        <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                          {item.lastName}
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
+                          {item.email}
+                        </td>
+                        <td className="px-6 py-4 text-sm text-right whitespace-nowrap">
+                          <a className="text-gray-800" href="#">
+                            {item.address}
+                          </a>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-right whitespace-nowrap">
+                          <a className="text-gray-800" href="#">
+                            {item.contact}
+                          </a>
+                        </td>
+                        <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                          <a className="text-gray-800" href="#">
+                            {item.model}
+                          </a>
+                        </td>
+
+                        <td
+                          className={`px-6 py-4 text-sm text-gray-800 text-right whitespace-nowrap ${getStatusTextColor(
+                            item.status
+                          )}`}
+                        >
+                          {item.status}
+                        </td>
+                        <td
+                          className={`px-6 py-4 text-sm text-gray-800 text-right whitespace-nowrap ${getStatusTextColor(
+                            item.status
+                          )}`}
+                        >
+                          {item.status}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };

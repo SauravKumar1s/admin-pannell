@@ -1,7 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import { Chart, LineController, LineElement, LinearScale, CategoryScale, PointElement } from 'chart.js';
+import React, { useEffect, useRef } from "react";
+import {
+  Chart,
+  LineController,
+  LineElement,
+  LinearScale,
+  CategoryScale,
+  PointElement,
+} from "chart.js";
 
-Chart.register(LineController, LineElement, LinearScale, CategoryScale, PointElement);
+Chart.register(
+  LineController,
+  LineElement,
+  LinearScale,
+  CategoryScale,
+  PointElement
+);
 
 const Graph = () => {
   const chartRef = useRef(null);
@@ -9,31 +22,31 @@ const Graph = () => {
 
   useEffect(() => {
     // Data for Line Graph 1
-    const data1 = [10, 20, 45, 48, 50];
+    const data1 = [0 ,10, 20, 45, 48, 50];
     // Data for Line Graph 2
-    const data2 = [15, 25, 35, 20, 55];
+    const data2 = [0 ,15, 25, 35, 45, 55];
 
-    const ctx = chartRef.current.getContext('2d');
+    const ctx = chartRef.current.getContext("2d");
 
     if (chartInstance.current) {
       chartInstance.current.destroy();
     }
 
     chartInstance.current = new Chart(ctx, {
-      type: 'line',
+      type: "line",
       data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May"],
         datasets: [
           {
-            label: 'Line Graph 1',
+            label: "Line Graph 1",
             data: data1,
-            borderColor: 'red',
+            borderColor: "red",
             fill: false,
           },
           {
-            label: 'Line Graph 2',
+            label: "Line Graph 2",
             data: data2,
-            borderColor: 'blue',
+            borderColor: "blue",
             fill: false,
           },
         ],
@@ -41,7 +54,7 @@ const Graph = () => {
       options: {
         scales: {
           x: {
-            type: 'category',
+            type: "category",
           },
         },
         responsive: true,
@@ -52,10 +65,9 @@ const Graph = () => {
 
   return (
     <div className="mt-0 w-full max-w-full lg:w-full lg:flex-none">
-      <div className="border-black-125 shadow-soft-xl dark:shadow-soft-dark-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl bg-gray-100 border border-gray-300 shadow-sm bg-clip-border">
-        <div className="border-black-125 mb-0 rounded-t-2xl border-b-0 border-solid p-6 pb-0">
+      <div className="border-black-125 shadow-soft-xl dark:shadow-soft-dark-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl  border border-gray-300 shadow-sm bg-clip-border">
+        <div className="border-black-125 mb-0 rounded-t-2xl border-b-0 border-solid p-2 pb-0">
           <h6 className="sm:text-2xl">No of clicks Report</h6>
-        
         </div>
         <div className="flex-auto p-4">
           <div>

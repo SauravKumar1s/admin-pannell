@@ -1,10 +1,10 @@
 import React from 'react'
-import { Table } from '../../../components/dashboard/Table'
+import {  TableTestDrive } from '../../../components/dashboard/Table'
 
 const TestDrive = () => {
   return (
     <div className='sm:px-8'>
-      <Table/>
+      <TableTestDrive/>
     </div>
   )
 }
