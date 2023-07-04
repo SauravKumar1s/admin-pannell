@@ -59,6 +59,7 @@ export default function Admin(props) {
 
   document.documentElement.dir = "ltr";
   return (
+    <>
     <div className="flex h-full w-full">
       <Sidebar open={open} onClose={() => setOpen(false)} />
       {/* Navbar & Main Content */}
@@ -85,12 +86,16 @@ export default function Admin(props) {
                   element={<Navigate to="/admin/dashboard" replace />}
                 />
               </Routes>
-              <AdminFooter/>
             </div>
            
           </div>
+    <AdminFooter/>
+
         </main>
+
       </div>
+      
     </div>
+</>
   );
 }
